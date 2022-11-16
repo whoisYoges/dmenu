@@ -6,3 +6,5 @@ stest.o
 util.o
 dmenu-5.1.tar.gz
 config.h
+*.orig
+*.rej
