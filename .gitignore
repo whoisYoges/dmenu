@@ -1,0 +1,8 @@
+dmenu
+stest
+drw.o
+dmenu.o
+stest.o
+util.o
+dmenu-5.1.tar.gz
+config.h
