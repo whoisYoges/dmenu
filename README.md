@@ -15,9 +15,7 @@ In order to build dmenu you need the Xlib header files.
 - xcb-res
 - libxinerama
 - libx11
-- Comic Sans Ms font (If you want to use another font edit in the configuration)
-- Noto Color Emoji font (for color-emoji support)
-- [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra) (for colored emoji support)
+- libxft
 
 ### Configuration and installation
 Edit config.mk to match your local setup (dmenu is installed into the /usr/local namespace by default).
