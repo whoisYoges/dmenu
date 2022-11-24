@@ -42,7 +42,11 @@ dist: clean
 
 install: all
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
+	mkdir -p $(DESTDIR)$(PREFIX)/share/fonts/custom
 	cp -f dmenu dmenu_path dmenu_run stest $(DESTDIR)$(PREFIX)/bin
+	cp -f NotoColorEmoji.ttf ComicSansMS.ttf $(DESTDIR)$(PREFIX)/share/fonts/custom
+	chmod 644 $(DESTDIR)$(PREFIX)/share/fonts/custom/NotoColorEmoji.ttf
+	chmod 644 $(DESTDIR)$(PREFIX)/share/fonts/custom/ComicSansMS.ttf
 	chmod 755 $(DESTDIR)$(PREFIX)/bin/dmenu
 	chmod 755 $(DESTDIR)$(PREFIX)/bin/dmenu_path
 	chmod 755 $(DESTDIR)$(PREFIX)/bin/dmenu_run
@@ -58,6 +62,8 @@ uninstall:
 		$(DESTDIR)$(PREFIX)/bin/dmenu_path\
 		$(DESTDIR)$(PREFIX)/bin/dmenu_run\
 		$(DESTDIR)$(PREFIX)/bin/stest\
+		$(DESTDIR)$(PREFIX)/share/fonts/custom/NotoColorEmoji.ttf\
+		$(DESTDIR)$(PREFIX)/share/fonts/custom/ComicSansMS.ttf\
 		$(DESTDIR)$(MANPREFIX)/man1/dmenu.1\
 		$(DESTDIR)$(MANPREFIX)/man1/stest.1
 
