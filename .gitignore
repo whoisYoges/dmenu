@@ -1,0 +1,6 @@
+config.h
+*.o
+dwm
+*.orig
+*.rej
+*.tar.gz
