@@ -1,6 +1,7 @@
-config.h
+# config.h
 *.o
-dwm
+dmenu
+stest
 *.orig
 *.rej
 *.tar.gz
