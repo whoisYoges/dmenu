@@ -25,6 +25,7 @@ In order to build dmenu you need the Xlib header files.
 - libxinerama
 - libx11
 - libxft
+- [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 
 ### Configuration
 
@@ -36,14 +37,7 @@ The configuration of dmenu is done copying [config.def.h](config.def.h) to `conf
 
 1. Install all the required [dependencies](#dependencies).
 
-2. Copy required fonts to fonts directory.
-
-```
-sudo cp -r ComicSansMS /usr/share/fonts/
-sudo cp -r Font-Awesome /usr/share/fonts/
-```
-
-3. Install dmenu.
+2. Install dmenu.
 
 ```
 sudo make install
