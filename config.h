@@ -6,6 +6,7 @@ static int centered = 1;                    /* -c option; centers dmenu on scree
 static int min_width = 200;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
+	"0xProto Nerd Font:size=11",
 	"CaskaydiaCove NF:size=11",
 	"Symbols Nerd Font:size=9" 
 };
@@ -14,14 +15,14 @@ static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	/* Light Mode */
 	/*
-	[SchemeNorm] = { "#343b58", "#e6e7ed" },
-	[SchemeSel] = { "#ebdbb2", "#313244" },
-	[SchemeOut] = { "#5a3e8e", "#ebdbb2" },
+	[SchemeNorm] = { "#3c3836", "#fbf1c7" },
+	[SchemeSel] = { "#fbf1c7", "#b8bb26" },
+	[SchemeOut] = { "#fbf1c7", "#8ec07c" },
 	*/
 	/* Dark Mode */
-	[SchemeNorm] = { "#cdd6f4", "#313244" },
-	[SchemeSel] = { "#1e1e2e", "#f38ba8" },
-	[SchemeOut] = { "#000000", "#89dceb" },
+	[SchemeNorm] = { "#ebdbb2", "#282828" },
+	[SchemeSel] = { "#ebdbb2", "#98971a" },
+	[SchemeOut] = { "#ebdbb2", "#8ec07c" },
 };
 
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
